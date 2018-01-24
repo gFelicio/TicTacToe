@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.documentElement.style.height = '100%';
     body.height = '100%';
     body.margin = 0;
-    body.backgroundColor = 'indigo';
+    body.backgroundColor = 'wheat';
     body.display = 'flex';
     body.justifyContent = 'center';
     body.alignItems = 'center';
@@ -36,12 +36,12 @@ document.addEventListener('DOMContentLoaded', function () {
     var buttonX = document.createElement('button');
     buttonX.className = 'choose-button';
     buttonX.textContent = 'X';
-    buttonX.style.color = 'white';
+    buttonX.style.color = '#e24848';
 
     var buttonO = document.createElement('button');
     buttonO.className = 'choose-button';
     buttonO.textContent = 'O';
-    buttonO.style.color = 'red';
+    buttonO.style.color = '#4859e2';
 
     choose.appendChild(buttonX);
     choose.appendChild(buttonO);
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
       if (chooseButtons.hasOwnProperty(i)) {
         chooseButtons[i].style.width = '200px';
         chooseButtons[i].style.height = '200px';
-        chooseButtons[i].style.backgroundColor = '#222222';
+        chooseButtons[i].style.backgroundColor = '#0005d454';
         chooseButtons[i].style.fontSize = '150px';
         chooseButtons[i].style.borderRadius = '15px';
         chooseButtons[i].style.border = 'none';
@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', function () {
     ctx = canvas.getContext('2d');
     canvas.width = 600;
     canvas.height = 600;
-    canvas.style.backgroundColor = '#222222';
+    canvas.style.backgroundColor = '#aebbb9';
     canvas.style.boxShadow = '0 0 20px 0 black';
     canvas.style.borderRadius = '10px';
     canvas.style.opacity = '0';
@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', function () {
   function drawTable() {
     // Draws the game table inside the canvas
     ctx.save();
-    ctx.strokeStyle = '#DDDDDD';
+    ctx.strokeStyle = '#000000';
     ctx.lineWidth = '5';
     ctx.beginPath();
     ctx.moveTo(200, 10);
@@ -168,7 +168,7 @@ document.addEventListener('DOMContentLoaded', function () {
     reset.style.position = 'fixed';
     reset.style.top = '50px';
     reset.style.right = '50px';
-    reset.style.backgroundColor = 'white';
+    reset.style.backgroundColor = 'lightgrey';
     reset.style.fontFamily = 'monospace';
     reset.style.color = '#222222';
     reset.style.border = 'none';
@@ -189,7 +189,7 @@ document.addEventListener('DOMContentLoaded', function () {
     score.style.justifyContent = 'space-between';
     score.style.fontFamily = 'monospace';
     score.style.textTransform = 'uppercase';
-    score.style.color = 'white';
+    score.style.color = 'dimgrey';
     score.style.opacity = '0';
 
     var userWins = document.createElement('h1');
